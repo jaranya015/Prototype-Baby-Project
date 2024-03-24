@@ -15,11 +15,28 @@
   <div class="bar-bottom"></div>
 </div>
 
-<button class="button">
+<button class="button" onclick="toggleOptions()">
   <span class="bar"></span>
   <span class="bar"></span>
   <span class="bar"></span>
 </button>
+
+<ul class="options" id="options-dropdown">
+  <li>Chat</li>
+  <li>Setting</li>
+</ul>
+
+<script>
+  function toggleOptions() {
+    var optionsDropdown = document.getElementById("options-dropdown");
+    if (optionsDropdown.style.display === "block") {
+      optionsDropdown.style.display = "none"; // ซ่อน Dropdown
+    } else {
+      optionsDropdown.style.display = "block"; // แสดง Dropdown
+    }
+  }
+</script>
+
 
 </body>
 </html>

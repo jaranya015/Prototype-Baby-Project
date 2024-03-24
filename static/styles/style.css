@@ -3,27 +3,23 @@
 .container {
   height: 100vh;
 }
-
 .bar-top, .bar-bottom {
   height: 40px;
   background-color: #CCFFFF;
   border-radius: 4px;
 }
-
 .bar-top {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
 }
-
 .bar-bottom {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }
-
 .content {
   position: absolute;
   top: 40px;
@@ -31,7 +27,6 @@
   left: 0;
   right: 0;
 }
-
 
 
 
@@ -51,7 +46,6 @@
   cursor: pointer;
   background-color:#CCFFFF;
 }
-
 .bar {
   display: inline-block;
   width: 4px;
@@ -60,15 +54,34 @@
   border-radius: 2px;
   vertical-align: middle;
 }
-
 .bar:first-child {
   margin-right: 4px;
 }
-
 .bar:last-child {
   margin-left: 4px;
 }
 
+
+
+.options {
+  display: none; /* ซ่อน Dropdown เริ่มต้น */
+  position: absolute;
+  top: 30px; /* ระยะห่างด้านบนของ Dropdown จากปุ่ม */
+  right: 0;
+  background-color: #ffffff; /* สีพื้นหลังของ Dropdown */
+  border: 1px solid #CCCCCC; /* เส้นขอบของ Dropdown */
+  border-radius: 4px; /* มุมโค้งของเส้นขอบ */
+  padding: 4px 8px; /* ระยะห่างภายใน Dropdown */
+  list-style: none; /* เอาเครื่องหมายลูกศรของรายการออก */
+}
+
+.options li {
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นแบบแสดงว่าเป็นลิ้ง */
+}
+
+.options li:hover {
+  background-color: #f0f0f0; /* เมื่อชี้เมาส์ไปที่ตัวเลือก ให้เปลี่ยนสีพื้นหลัง */
+}
 
 
 
