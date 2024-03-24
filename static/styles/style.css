@@ -16,6 +16,15 @@ a {
   color: #000; /* เปลี่ยนสีลิงก์ใน Navbar เป็นสีดำ */
 }
 
+.logo {
+  margin-right: auto; /* ย้าย logo ไปทางซ้ายสุด */
+}
+
+.logo img {
+  width: 40px; /* กำหนดความกว้างของรูปภาพ */
+  height: 40px; /* กำหนดความสูงของรูปภาพ */
+}
+
 /* Navbar ด้านบน */
 .navbar {
   position: fixed;
