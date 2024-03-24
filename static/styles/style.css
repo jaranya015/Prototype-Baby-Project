@@ -1,16 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
 
+.container {
+  height: 100vh;
+}
+
+.bar-top, .bar-bottom {
+  height: 40px;
+  background-color: #CCFFFF;
+  border-radius: 4px;
+}
+
+.bar-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.bar-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+
+
+
+
+
+
 .button {
-  float: right;
+  position: absolute; /* เพิ่มคุณสมบัตินี้เพื่อให้ปุ่มเป็นแบบสากล */
+  top: 10px; /* กำหนดระยะห่างด้านบนของหน้าเว็บ */
+  right: 10px; /* กำหนดระยะห่างด้านขวาของหน้าเว็บ */
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 40px;
   height: 24px;
-  border: 1px solid #fff;
+  border: 1px solid #CCFFFF;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #fff;
+  background-color:#CCFFFF;
 }
 
 .bar {
@@ -29,3 +68,7 @@
 .bar:last-child {
   margin-left: 4px;
 }
+
+
+
+
