@@ -1,10 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Kanit', sans-serif; /* กำหนดให้ทั้งหน้าเว็บใช้ฟอนต์ Kanit */
+  color: #000; /* เปลี่ยนสีตัวอักษรเป็นสีดำ */
+}
+
+a {
+  text-decoration: none; /* เอาขีดใต้ออก */
+  color: #000; /* เปลี่ยนสีลิงก์เป็นสีดำ */
+}
+
+.navbar a,
+.bottom-navbar a {
+  text-decoration: none; /* เอาขีดใต้ออก */
+  color: #000; /* เปลี่ยนสีลิงก์ใน Navbar เป็นสีดำ */
+}
+
 /* Navbar ด้านบน */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 40px; /* ความสูงของ Navbar */
+  height: 45px; /* ความสูงของ Navbar */
   background-color: #CCFFFF; /* สีพื้นหลังของ Navbar */
   border-radius: 4px; /* มุมโค้งของ Navbar */
   display: flex;
@@ -12,6 +30,30 @@
   justify-content: flex-end;
   padding-right: 10px; /* ระยะห่างด้านขวาของ Navbar */
 }
+
+
+/* Navbar ด้านล่าง */
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px; /* ความสูงของ Navbar */
+  background-color:  #CCFFFF; /* สีพื้นหลังของ Navbar */
+  color: #fff;
+  display: flex;
+  justify-content: space-between; /* จัดเรียงเมนูเป็นชิดขอบสุดทั้งสองข้าง */
+  align-items: center; /* จัดให้เมนูอยู่กึ่งกลางตามแนวดิ่ง */
+  padding: 0 10px; /* ระยะห่างขอบซ้าย-ขวาของ Navbar */ 
+}
+.menu {
+  display: flex;
+  list-style-type: none; /* เอาเครื่องหมายของรายการออก */
+}
+.menu li {
+  margin: 0 10px; /* ระยะห่างขอบซ้าย-ขวาของเมนู */
+}
+
 
 /* ปุ่มกด 3 จุด */
 .button {
