@@ -1,37 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
-
-.container {
-  height: 100vh;
-}
-.bar-top, .bar-bottom {
-  height: 40px;
-  background-color: #CCFFFF;
-  border-radius: 4px;
-}
-.bar-top {
-  position: absolute;
+/* Navbar ด้านบน */
+.navbar {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-}
-.bar-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.content {
-  position: absolute;
-  top: 40px;
-  bottom: 40px;
-  left: 0;
-  right: 0;
+  height: 40px; /* ความสูงของ Navbar */
+  background-color: #CCFFFF; /* สีพื้นหลังของ Navbar */
+  border-radius: 4px; /* มุมโค้งของ Navbar */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px; /* ระยะห่างด้านขวาของ Navbar */
 }
 
-
-
-
-
+/* ปุ่มกด 3 จุด */
 .button {
   position: absolute; /* เพิ่มคุณสมบัตินี้เพื่อให้ปุ่มเป็นแบบสากล */
   top: 10px; /* กำหนดระยะห่างด้านบนของหน้าเว็บ */
@@ -61,27 +43,25 @@
   margin-left: 4px;
 }
 
-
-
+/* Dropdown ของปุ่มกด 3 จุด */
 .options {
-  display: none; /* ซ่อน Dropdown เริ่มต้น */
   position: absolute;
-  top: 30px; /* ระยะห่างด้านบนของ Dropdown จากปุ่ม */
-  right: 0;
+  top: 40px; /* ระยะห่างด้านบนของ Dropdown จาก Navbar */
+  right: 10px; /* ระยะห่างด้านขวาของ Dropdown */
   background-color: #ffffff; /* สีพื้นหลังของ Dropdown */
   border: 1px solid #CCCCCC; /* เส้นขอบของ Dropdown */
   border-radius: 4px; /* มุมโค้งของเส้นขอบ */
-  padding: 4px 8px; /* ระยะห่างภายใน Dropdown */
+  padding: 8px; /* ระยะห่างภายใน Dropdown */
   list-style: none; /* เอาเครื่องหมายลูกศรของรายการออก */
+  display: none; /* ซ่อน Dropdown เริ่มต้น */
 }
 
 .options li {
-  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นแบบแสดงว่าเป็นลิ้ง */
+  cursor: pointer;
 }
 
 .options li:hover {
   background-color: #f0f0f0; /* เมื่อชี้เมาส์ไปที่ตัวเลือก ให้เปลี่ยนสีพื้นหลัง */
 }
-
 
 
