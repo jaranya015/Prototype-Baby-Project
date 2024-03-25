@@ -3,17 +3,20 @@
 body {
   font-family: 'Kanit', sans-serif; /* กำหนดให้ทั้งหน้าเว็บใช้ฟอนต์ Kanit */
   color: #000; /* เปลี่ยนสีตัวอักษรเป็นสีดำ */
+  font-size: 20px;
 }
 
 a {
   text-decoration: none; /* เอาขีดใต้ออก */
   color: #000; /* เปลี่ยนสีลิงก์เป็นสีดำ */
+  font-size: 20px;
 }
 
 .navbar a,
 .bottom-navbar a {
   text-decoration: none; /* เอาขีดใต้ออก */
   color: #000; /* เปลี่ยนสีลิงก์ใน Navbar เป็นสีดำ */
+  font-size: 20px;
 }
 
 
