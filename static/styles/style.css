@@ -27,18 +27,36 @@ a {
 /* }   */
 
 .heart {
-  content: '';
-  width: 35px;
-  height: 35px;
-  background: rgb(20, 19, 19);
-  position: relative;
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  top: -30px;
-  left: 25px;
-  margin-right: auto;
+  background-color: #000;
+  display: inline-block;
+  height: 30px;
+  margin: 24px; /* ลบ margin */
+  position: fixed; /* เปลี่ยนเป็น fixed เพื่อให้หัวใจอยู่ที่ตำแหน่งที่ต้องการบนหน้าจอ */
+  top: 1%; /* นำหัวใจมาไว้ที่ตำแหน่งแนวดิ่งที่ครึ่งบนของหน้าจอ */
+  left: 1px; /* นำหัวใจมาไว้ที่ด้านซ้ายสุดของหน้าจอ */
+  transform: rotate(-45deg) translateY(-50%); /* หมุนหัวใจและย้ายตำแหน่งแนวดิ่งให้อยู่ตรงกลาง */
+  width: 30px;
 }
 
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #000;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
 
 
 /* Navbar ด้านบน */
@@ -47,7 +65,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  height: 45px; /* ความสูงของ Navbar */
+  height: 62px; /* ความสูงของ Navbar */
   background-color: #CCFFFF; /* สีพื้นหลังของ Navbar */
   border-radius: 4px; /* มุมโค้งของ Navbar */
   display: flex;
@@ -63,7 +81,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40px; /* ความสูงของ Navbar */
+  height: 50px; /* ความสูงของ Navbar */
   background-color:  #CCFFFF; /* สีพื้นหลังของ Navbar */
   color: #fff;
   display: flex;
